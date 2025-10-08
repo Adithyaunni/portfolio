@@ -49,10 +49,10 @@ export function SiteNavbar() {
         <div
           className={cn(
             "grid overflow-hidden transition-[grid-template-rows] duration-300 md:hidden",
-            open ? "grid-rows-[1fr]" : "grid-rows-[0fr]",
+            open ? "grid-rows-[1fr] pb-4" : "grid-rows-[0fr] pb-0",
           )}
         >
-          <ul className="min-h-0 overflow-hidden pb-4 flex flex-col gap-2">
+          <ul className="min-h-0 overflow-hidden flex flex-col gap-2">
             {links.map((l) => (
               <li key={l.href}>
                 <Link
