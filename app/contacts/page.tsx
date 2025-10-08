@@ -1,7 +1,7 @@
 "use client"
 
 import { Reveal } from "@/components/reveal"
-import { FiMail, FiPhone, FiMapPin } from "react-icons/fi"
+import { FiMail, FiPhone, FiMapPin, FiGithub, FiLinkedin } from "react-icons/fi"
 
 export default function ContactsPage() {
   return (
@@ -10,17 +10,23 @@ export default function ContactsPage() {
         <h1 className="text-3xl sm:text-4xl font-semibold mb-6">Get in touch</h1>
       </Reveal>
 
-      <div className="grid gap-8 md:grid-cols-2">
+      {/* <div className="grid gap-8 md:grid-cols-2"> */}
         <Reveal className="space-y-4">
-          <div className="rounded-xl border p-4">
-            <div className="flex items-center gap-3">
+          <div className="rounded-xl border p-4 grid gap-8 md:grid-cols-2">
+            <a
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=adithyaunni1204@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 hover:underline"
+            >
               <FiMail aria-hidden className="h-5 w-5 text-primary" />
               <div>
                 <p className="text-sm text-muted-foreground">Email</p>
                 <p>adithyaunni1204@gmail.com</p>
               </div>
-            </div>
+            </a>
           </div>
+
           <div className="rounded-xl border p-4">
             <div className="flex items-center gap-3">
               <FiPhone aria-hidden className="h-5 w-5 text-primary" />
@@ -29,6 +35,22 @@ export default function ContactsPage() {
                 <p>+91 8618763360</p>
               </div>
             </div>
+          </div>
+          <div className="rounded-xl border p-4">
+              <a className="flex items-center gap-3"
+                  href="https://github.com/Adithyaunni" target="_blank"
+                >
+                  <FiGithub aria-hidden className="h-5 w-5 text-primary" />
+                <p>GitHub</p>
+                </a>
+          </div>
+          <div className="rounded-xl border p-4">
+              <a className="flex items-center gap-3"
+                  href="https://www.linkedin.com/in/adithya-unni-364b8232b" target="_blank"
+                >
+                  <FiLinkedin aria-hidden className="h-5 w-5 text-primary" />
+                <p>Linkedin</p>
+                </a>
           </div>
           <div className="rounded-xl border p-4">
             <div className="flex items-center gap-3">
@@ -41,8 +63,8 @@ export default function ContactsPage() {
           </div>
         </Reveal>
 
-        <Reveal delay={80}>
-          <form className="rounded-xl border p-5 space-y-4" onSubmit={(e) => e.preventDefault()}>
+        {/* <Reveal delay={80}>
+          <form className="rounded-xl h-full border p-5 space-y-4" onSubmit={(e) => e.preventDefault()}>
             <div>
               <label className="block text-sm mb-1">Name</label>
               <input
@@ -72,8 +94,8 @@ export default function ContactsPage() {
               Send a message
             </button>
           </form>
-        </Reveal>
-      </div>
+        </Reveal> */}
+      {/* </div> */}
     </main>
   )
 }
