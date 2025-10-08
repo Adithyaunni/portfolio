@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { FiDownload, FiExternalLink, FiMail, FiMapPin, FiBriefcase } from "react-icons/fi"
 
 export function ResumeCard() {
-  const resumePath = "/resume.pdf"
+  const resumePath = "/Milan-Resume.pdf"
 
   return (
     <Card className="bg-card text-card-foreground border-border">
@@ -49,7 +49,7 @@ export function ResumeCard() {
       <CardFooter className="flex flex-col sm:flex-row gap-3 sm:gap-4">
         <a
           href={resumePath}
-          download="John_Doe_Resume.pdf"
+          download="Adithya_Unni_Resume.pdf"
           className="w-full sm:w-auto"
           aria-label="Download resume as PDF"
         >
