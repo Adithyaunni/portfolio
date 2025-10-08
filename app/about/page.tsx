@@ -3,7 +3,7 @@ import { ResumeCard } from "@/components/resume-card"
 
 export default function AboutPage() {
   return (
-    <main className="mx-auto max-w- px-4 sm:px-6 lg:px-8 py-14">
+    <main className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
       <Reveal>
         <h1 className="text-3xl sm:text-4xl font-semibold text-balance mb-4">About Me</h1>
       </Reveal>
