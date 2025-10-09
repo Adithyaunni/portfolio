@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button"
 import { FiDownload, FiExternalLink, FiMail, FiMapPin, FiBriefcase } from "react-icons/fi"
 
 export function ResumeCard() {
-  const resumePath = "/nithya resume.pdf"
+  const resumePath = "/nithya-resume.pdf"
 
   return (
     <Card className="bg-card text-card-foreground border-border">
